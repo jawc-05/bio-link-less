@@ -4,24 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página do João</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="build/styles/main.css">
 </head>
 <body>
+    <div class="container">
     <header>
-        <img src="https://placehold.co/200x200">
-        <h1>Jawc's Page</h1>
-        <h2>Software Engineer</h2>
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum fugit perspiciatis perferendis illo aliquam aut iste nisi quaerat eaque, quis, ex reiciendis eligendi modi sint corporis architecto incidunt voluptas officia?
-        </p>
+            
+            <img class="pfp-avatar" src="https://placehold.co/96">
+            <div class="profile-bio">
+                <h1 class="profile-bio-name">Jawc's Page</h1>
+                <h2 class="profile-bio-subtitle">Software Engineer</h2>
+                
+                <p class="profile-bio-description">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum fugit perspiciatis perferendis illo aliquam aut iste nisi quaerat eaque, quis, ex reiciendis eligendi modi sint corporis architecto incidunt voluptas officia?
+                </p>
+
+            </div>
+            
+
+        </header>
         <nav>
-            <ul>
-                <li><a href="">Instagram</a></li>
-                <li><a href="">Github</a></li>
-                <li><a href="">Linkedin</a></li>
-                <li><a href="">Email</a></li>
+            <ul class="social-links">
+                <li>
+                    <a href="">
+                        <img src="/src/imgs/instagram.svg" alt="instagram-logo"> 
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="/src/imgs/github.svg" alt="github-logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="/src/imgs/linkedin.svg" alt="linkedin-logo"> 
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="/src/imgs/mail.svg" alt="email-logo"> 
+                    </a>
+                </li>
             </ul>
         </nav>
-    </header>
+    </div>
 </body>
 </html>
