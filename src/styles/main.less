@@ -10,6 +10,12 @@
     font-size: 14px;
 }
 
+.pfp-avatar {
+    max-height: 96px;
+    max-width: 96px;
+    width: 100%;
+}
+
 *{
     margin:0;
     padding: 0;
@@ -26,6 +32,10 @@ body{
     max-width: 960px;
     width: 100%;
     margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 
     @media @breakpointTablet{
@@ -38,7 +48,7 @@ body{
 }
 
 header{
-    padding: 24px;
+    padding-bottom: 24px;
 
     .pfp-avatar{
         display: block;
@@ -67,6 +77,10 @@ header{
     }
 }
 
+li{
+    list-style: none;
+}
+
 .social-links{
     display: flex;
     justify-content: space-between;
@@ -74,15 +88,35 @@ header{
     width: 100%;
     margin: 0 auto;
 
-    li{
-        list-style: none;
-
-        img{
+        li img{
             transition: all ease .3s;
             &:hover{
                 transform: scale(1.2);
             }
         }
 
+    }
+
+.projects-list{
+    &-item{
+        a{
+            display: block;
+            background-color: #colors[btnColor];
+            color: #colors[textColor];
+            font-weight: bold;
+            text-decoration: none;
+            padding: 16px 20px;
+            margin-bottom: 16px;
+            margin-top: 32px;
+            text-align: center;
+            border-radius: 30px;
+            border: 2px solid #colors[btnColor];
+            transition: all ease .5s;
+        
+            &:hover{
+                color: #colors[btnColor];
+                background-color: transparent;
+            }
+        }
     }
 }
