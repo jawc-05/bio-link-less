@@ -11,8 +11,8 @@
 }
 
 .pfp-avatar {
-    max-height: 96px;
-    max-width: 96px;
+    max-height: 120px;
+    max-width: 120px;
     width: 100%;
 }
 
@@ -99,6 +99,10 @@ li{
 
 .projects-list{
     &-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
         a{
             display: block;
             background-color: #colors[btnColor];
@@ -118,5 +122,21 @@ li{
                 background-color: transparent;
             }
         }
+    }
+}
+
+.project-github-link{
+    padding: 8px;
+    background-color: transparent;
+    border: none;
+
+    img{
+        width: 24px;
+        height: 24px;
+        display: block;
+    }
+
+    &:hover img {
+        filter: brightness(0.7);
     }
 }
